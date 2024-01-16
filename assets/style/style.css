@@ -143,6 +143,14 @@ button{
     background-color: black;
     color: white;
 }
+.products  > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 460px;
+    justify-content: center;
+}
 
 .btn-final {
     margin-top: 40px;
@@ -307,10 +315,10 @@ textarea::placeholder{
 .copi {
     display: none;
 }
- @media (min-width: 700px) {
+ @media (min-width: 800px) {
     .BarraMenu{
         display: flex;
-        gap: 1.2em;
+        gap: 1em;
        color: white;
     }
 
@@ -320,22 +328,29 @@ textarea::placeholder{
 
     .inicio{
         display: flex;
-        justify-content: center;
-        align-items: center;
-      justify-content: space-around;
-    padding: 0em 15em 10em 15em;
-    gap: 2em;
+   justify-content: center;
+   padding: 0em 15em 10em 15em;
+   gap: 2em;
     }
     
-.text > h3{
-    font-weight: 250;
-    font-size: 2.3em;
+.text {
+    width: 100%;
+    max-width: 30em;
+}
+.text > h3 {
+    font-size: 2em;
+}
+.text > h1 {
+    font-size: 3.8em;
+}
+.text > p {
+    font-size: .8em;
+}
+.buttons > button {
+    width: 100%;
+    max-width: 11em;
 }
 
-.text > h1 {
-    font-size: 4.5em;
-    margin-top: 12px;
-}
 
 .buttons {
     margin-top: 45px;
@@ -343,7 +358,7 @@ textarea::placeholder{
     gap: 10px;
 }
 .Image1{
-    width: 30em;
+    width: 25em;
 }
 
 .tarjetas {
@@ -399,7 +414,8 @@ textarea::placeholder{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     justify-content: center;
 }
 
@@ -441,7 +457,7 @@ textarea::placeholder{
 }
 .comet{
     width: 100%;
-    max-width: 33em;
+    max-width: 30em;
     margin: auto;
     position: relative;
     left: 85px;
@@ -449,7 +465,8 @@ textarea::placeholder{
 .contactame h1 {
     border-bottom: 1px solid white;
     text-align: center;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -477,7 +494,7 @@ textarea::placeholder{
 }
 .footer {
     background-image: url(../images/footer.jpg);
-    padding: 10px;
+    padding: 40px;
     padding-top: 80px;
     color: white;
 }
@@ -485,7 +502,9 @@ textarea::placeholder{
    display: flex;
    justify-content: center;
    flex-direction: row;
+   flex-wrap: wrap;
    gap: 4em;
+   width: 100%;
 }
 .hijo1 > div > figure > img {
     width: 70px;
@@ -502,7 +521,7 @@ textarea::placeholder{
     height: 30px;
     width: 30px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     font-size: 1.5em;
     margin-top: 10px;
@@ -518,7 +537,6 @@ textarea::placeholder{
     display: grid;
 }
 .text-fi input {
-    width: 15em;
     height: 35px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -539,7 +557,7 @@ textarea::placeholder{
     margin-bottom: 2em;
 }
 hr{
-    width: 1000px;
+    width: 90%;
     margin: auto;
     margin-bottom: 2em;
 }
