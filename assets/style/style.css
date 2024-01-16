@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+
+.home {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.BarraMenu{
+    display:none;
+}
+.menu i {
+    font-size: 43px;
+    color: white;
+    cursor: pointer;
+}
+.inicio {
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.padre{
+    padding-bottom: 100px;
+}
+
+.text > h3{
+    font-weight: 300;
+}
+
+.text > h1 {
+    font-size: 2.3em;
+    margin-top: 12px;
+}
+
+.buttons {
+    margin-top: 45px;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons > button{
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width: 100px;
+}
+
+.Image1{
+    margin-top: 24px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+   padding-bottom: 90px;
+}
+.tarjetas > div {
+    border: 1px solid rgb(4, 179, 91);
+    height: 300px;
+    width: 330px;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.tarjetas > div > figure > img {
+    max-width: 100px;
+}
+
+.products {
+    background-color: rgb(236, 235, 232);
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products h1 {
+    font-size: 1.6em;
+    font-weight: 1700;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(4, 179, 91);
+    width: 260px;
+    margin: auto;
+}
+
+.products  div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    width: 330px;
+    margin-bottom: 30px;
+}
+
+.product > div > figure > img {
+    max-width: 180px;
+}
+
+.product > div > button {
+    padding: 5px;
+    font-size: 1.2em;
+    width: 8em;
+    background-color: black;
+    color: white;
+}
+
+.btn-final {
+    margin-top: 40px;
+    margin-bottom: 90px;
+    padding: 10px;
+    width: 15em;
+    color: rgb(20, 190, 162);
+    border: 2px solid rgb(20, 190, 147);
+}
+
+.Promociones {
+    background-image: url(../images/cross.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -17px;
+    padding: 34px;
+    padding-top: 80px;
+    margin-top: 4em;
+}
+.proInfo h3{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+.proInfo h1 {
+    font-weight: 500;
+    font-size: 3em;
+    color: white;
+}
+.proInfo button {
+    background-color: rgb(2, 179, 126);
+    padding: 10px;
+    border: none;
+    width: 130px;
+    color: white;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.image{
+    padding-bottom: 80px;
+}
+.cometarios {
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cometarios h2 {
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(4, 179, 91);
+    width: 270px;
+    margin: auto;
+    text-align: center;
+}
+.cometarios img {
+    width: 2em;
+    text-align: start;
+    margin-top: 50px;
+}
+.cometarios h3 {
+    font-size: 1.5em;
+}
+input::placeholder {
+    color: rgb(255, 255, 255);
+  }
+textarea::placeholder{
+    color: white;
+}
+.contactame {
+    background-image: url(../images/contact_g.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    color: white;
+    padding-bottom: 4em;
+}
+.contactame h1 {
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.contactame form {
+    border: 2px solid white;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 50px;
+}
+.contactame > form > input, textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+}
+.enviar {
+    width: 150px;
+    padding: 1em;
+    margin: auto;
+    border-radius: 40px;
+    background-color: rgb(38, 206, 164);
+    color: white;
+    border: none;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.footer {
+    background-image: url(../images/footer.jpg);
+    padding: 10px;
+    padding-top: 80px;
+    color: white;
+}
+.hijo1 {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+.hijo1 > div > figure > img {
+    width: 70px;
+}
+.redes {
+    display: flex;
+    gap: .5em;
+}
+.redes > li {
+    background-color: white;
+    color: black;
+    list-style: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 35px;
+}
+.text-fo{
+    width: 250px;
+}
+.text-fi{
+    width: 100%;
+}
+.text-fi input {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.text-fi button {
+    background-color: rgb(2, 179, 126);
+    color: white;
+    padding: 10px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.copi {
+    display: none;
+}
+ @media (min-width: 700px) {
+    .BarraMenu{
+        display: flex;
+        gap: 1.2em;
+       color: white;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .inicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      justify-content: space-around;
+    padding: 0em 15em 10em 15em;
+    gap: 2em;
+    }
+    
+.text > h3{
+    font-weight: 250;
+    font-size: 2.3em;
+}
+
+.text > h1 {
+    font-size: 4.5em;
+    margin-top: 12px;
+}
+
+.buttons {
+    margin-top: 45px;
+    display: flex;
+    gap: 10px;
+}
+.Image1{
+    width: 30em;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+   padding-bottom: 90px;
+}
+.tarjetas > div {
+    border: 1px solid rgb(4, 179, 91);
+    height: 300px;
+    width: 230px;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.tarjetas > div > figure > img {
+    max-width: 90px;
+}
+
+.products {
+    background-color: rgb(236, 235, 232);
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products h1 {
+    font-size: 1.6em;
+    font-weight: 1700;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(4, 179, 91);
+    width: 260px;
+    margin: auto;
+}
+
+.products > div > div{
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    width: 250px;
+    margin-bottom: 3px;
+}
+.products  > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: center;
+}
+
+.Promociones {
+    background-image: url(../images/cross.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -17px;
+    padding: 34px;
+    padding-top: 80px;
+    margin-top: 4em;
+    gap: 40px;
+}
+.proInfo h3{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+.proInfo h1 {
+    font-weight: 500;
+    font-size: 3em;
+    color: white;
+}
+.proInfo button {
+    background-color: rgb(2, 179, 126);
+    padding: 10px;
+    border: none;
+    width: 130px;
+    color: white;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.image{
+    padding-bottom: 80px;
+    width: 400px;
+}
+.comet{
+    width: 100%;
+    max-width: 33em;
+    margin: auto;
+    position: relative;
+    left: 85px;
+}
+.contactame h1 {
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.contactame form {
+    max-width: 32em;
+    margin: auto;
+}
+.contactame > form > input, textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+}
+.enviar {
+    width: 150px;
+    padding: 1em;
+    margin: auto;
+    border-radius: 40px;
+    background-color: rgb(38, 206, 164);
+    color: white;
+    border: none;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.footer {
+    background-image: url(../images/footer.jpg);
+    padding: 10px;
+    padding-top: 80px;
+    color: white;
+}
+.hijo1 {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   gap: 4em;
+}
+.hijo1 > div > figure > img {
+    width: 70px;
+}
+.redes {
+    display: flex;
+    gap: .5em;
+}
+.redes > li {
+    background-color: white;
+    color: black;
+    list-style: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.text-fo{
+    width: 250px;
+}
+.fu{
+    display: none;
+}
+.text-fi{
+    width: 10%;
+    display: grid;
+}
+.text-fi input {
+    width: 15em;
+    height: 35px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 9px;
+}
+.text-fi button {
+    background-color: rgb(2, 179, 126);
+    color: white;
+    padding: 10px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.copi {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+hr{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+ }
